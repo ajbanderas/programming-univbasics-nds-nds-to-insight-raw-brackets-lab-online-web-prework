@@ -6,5 +6,5 @@ def directors_totals(nds)
   result = {}
   total = 0
   dir_index = 0
-  pp directors
+  pp directors[0]
 end
