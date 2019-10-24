@@ -16,5 +16,5 @@ def directors_totals(nds)
     total = 0
     dir_index += 1
   end
-  pp result
+  result
 end
