@@ -7,13 +7,14 @@ def directors_totals(nds)
   total = 0
   dir_index = 0
   while dir_index < directors.length do
-    result[directors[dir_index][:name]] = 0
     movie_index = 0
     while movie_index < directors[dir_index][:movies].length do
-    pp directors[dir_index][:movies][movie_index][:worldwide_gross]
+    total += directors[dir_index][:movies][movie_index][:worldwide_gross]
     movie_index += 1
     end
+    result[directors[dir_index][:name]] = total
+    total = 0
     dir_index += 1
   end
-  #pp result
+  pp result
 end
